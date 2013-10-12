@@ -29,11 +29,11 @@ var express = require('express');
 var app = express.createServer(express.logger());
 var path = require('path');
 
-//app.use(express.static(__dirname)); // Current directory is root
+
 app.use(express.static(path.join(__dirname, 'views'))); //  "public" off of current is root
 
-app.listen(8080);
-console.log('Listening on port 8080');
+//app.listen(8080);
+//console.log('Listening on port 8080');
 /*
 var express = require('express');
 var fs = require('fs');
@@ -43,10 +43,10 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   response.send(fs.readFileSync('index.html','utf8'));
 });
-
+*/
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
-*/
+
