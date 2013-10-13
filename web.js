@@ -31,7 +31,7 @@ app.get('/', function(request, response) {
   response.send(data);
 });
 
-app.use("/img",express.static(__dirname+"/img"));
+app.use("/",express.static(__dirname+"/"));
 
 app.listen(port, function() {
   console.log("Listening on " + port);
