@@ -13,7 +13,7 @@ app.set('port', process.env.PORT || 8080);
 
 // Render homepage (note trailing slash): example.com/
 app.get('/', function(request, response) {
-  var data = fs.readFileSync('index.html').toString();
+  var data = fs.readFileSync('tbhtml.html').toString();
   response.send(data);
 });
 
